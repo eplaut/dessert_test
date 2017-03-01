@@ -1,0 +1,36 @@
+$ slash run . -v
+8 tests collected
+[2017-03-01 12:00:38] ./test_1.py:test_1_false
+/home/eli/dessert_test/slashconf.py <module '_0.dessert_test.config' from '/home/eli/dessert_test/config.py'> False
+/home/eli/dessert_test/test_1.py <module '_0.dessert_test.config' from '/home/eli/dessert_test/config.py'> False
+[2017-03-01 12:00:38] ./test_2.py:test_2
+[2017-03-01 12:00:38] ./test_6/test_6.py:test_6_false
+/home/eli/dessert_test/test_6/my_fix.py <module 'config' from '/home/eli/dessert_test/config.py'> False
+/home/eli/dessert_test/test_6/test_6.py <module 'config' from '/home/eli/dessert_test/config.py'> False
+[2017-03-01 12:00:38] ./test_4/test_4.py:test_4_false
+/home/eli/dessert_test/test_4/slashconf.py <module 'config' from '/home/eli/dessert_test/config.py'> False
+/home/eli/dessert_test/test_4/test_4.py <module 'config' from '/home/eli/dessert_test/config.py'> False
+[2017-03-01 12:00:38] ./test_3/test_3.py:test_3_false
+/home/eli/dessert_test/test_3/slashconf.py <module '_0.dessert_test.config' from '/home/eli/dessert_test/config.py'> False
+/home/eli/dessert_test/test_3/test_3.py <module '_0.dessert_test.config' from '/home/eli/dessert_test/config.py'> False
+[2017-03-01 12:00:38] ./test_8/test_8.py:test_7_false
+/home/eli/dessert_test/slashconf.py <module '_0.dessert_test.config' from '/home/eli/dessert_test/config.py'> False
+/home/eli/dessert_test/test_8/test_8.py <module '_0.dessert_test.config' from '/home/eli/dessert_test/config.py'> False
+[2017-03-01 12:00:38] ./test_5/test_5.py:test_5_false
+/home/eli/dessert_test/test_5/slashconf.py <module 'config' from '/home/eli/dessert_test/config.py'> False
+/home/eli/dessert_test/test_5/test_5.py <module 'config' from '/home/eli/dessert_test/config.py'> False
+[2017-03-01 12:00:38] ./test_7/test_7.py:test_7_false
+/home/eli/dessert_test/slashconf.py <module '_0.dessert_test.config' from '/home/eli/dessert_test/config.py'> False
+/home/eli/dessert_test/test_7/test_7.py <module 'config' from '/home/eli/dessert_test/config.py'> True
+F: AssertionError: maybe my_var_abs is true
+assert True is False
+ +  where True = config.my_var_abs
+=================================================== Session Summary ===================================================
+== #8: ./test_7/test_7.py:test_7_false ================================================================================
+ - 1/1 F (2017-03-01 14:00:38 +02:00):   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ /home/eli/dessert_test/test_7/test_7.py:5
+>    assert config.my_var_abs is False, 'maybe my_var_abs is true'
+F    AssertionError: maybe my_var_abs is true
+    assert True is False
+     +  where True = config.my_var_abs
+=============== Session ended. 7 successful, 0 skipped, 1 failures, 0 errors. Total duration: 00:00:00 ================
